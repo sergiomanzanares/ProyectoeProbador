@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentoConjunto">
+
+    <ImageView
+        android:id="@+id/camiseta"
+        android:layout_width="83dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/camiseta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/zapatillas"
+        android:layout_width="86dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/rapatiilla"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pantalon" />
+
+    <ImageView
+        android:id="@+id/pantalon"
+        android:layout_width="86dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/pantalonm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camiseta" />
+
+    <ImageView
+        android:id="@+id/otros"
+        android:layout_width="83dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/otros"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zapatillas" />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Precio Total"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcionOtros"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/descripcionCamiseta"
+        android:layout_width="148dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Camiseta"
+        app:layout_constraintStart_toEndOf="@+id/camiseta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descripcionPantalon"
+        android:layout_width="138dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Pantalon"
+        app:layout_constraintStart_toEndOf="@+id/pantalon"
+        app:layout_constraintTop_toBottomOf="@+id/descripcionCamiseta" />
+
+    <TextView
+        android:id="@+id/descripcionZapatilla"
+        android:layout_width="136dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Zapatilla"
+        app:layout_constraintStart_toEndOf="@+id/zapatillas"
+        app:layout_constraintTop_toBottomOf="@+id/descripcionPantalon" />
+
+    <TextView
+        android:id="@+id/descripcionOtros"
+        android:layout_width="136dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Otros"
+        app:layout_constraintStart_toEndOf="@+id/otros"
+        app:layout_constraintTop_toBottomOf="@+id/descripcionZapatilla" />
+
+    <TextView
+        android:id="@+id/precioCamiseta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        android:text="0€"
+        app:layout_constraintStart_toEndOf="@+id/descripcionCamiseta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/precioPantalon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:text="0€"
+        app:layout_constraintStart_toEndOf="@+id/descripcionPantalon"
+        app:layout_constraintTop_toBottomOf="@+id/precioCamiseta" />
+
+    <TextView
+        android:id="@+id/precioZapatilas"
+        android:layout_width="19dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="64dp"
+        android:text="0€"
+        app:layout_constraintStart_toEndOf="@+id/descripcionZapatilla"
+        app:layout_constraintTop_toBottomOf="@+id/precioPantalon" />
+
+    <TextView
+        android:id="@+id/precioOtros"
+        android:layout_width="21dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="88dp"
+        android:text="0€"
+        app:layout_constraintStart_toEndOf="@+id/descripcionOtros"
+        app:layout_constraintTop_toBottomOf="@+id/precioZapatilas" />
+
+    <Button
+        android:id="@+id/compraCamiseta"
+        android:layout_width="49dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="44dp"
+        android:text="$"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toEndOf="@+id/precioCamiseta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/compraPantalon"
+        android:layout_width="49dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="48dp"
+        android:text="$"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toEndOf="@+id/precioPantalon"
+        app:layout_constraintTop_toBottomOf="@+id/compraCamiseta" />
+
+    <Button
+        android:id="@+id/compraOtros"
+        android:layout_width="49dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="44dp"
+        android:text="$"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toEndOf="@+id/precioOtros"
+        app:layout_constraintTop_toBottomOf="@+id/compraZapatillas" />
+
+    <Button
+        android:id="@+id/compraZapatillas"
+        android:layout_width="49dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:text="$"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toEndOf="@+id/precioZapatilas"
+        app:layout_constraintTop_toBottomOf="@+id/compraPantalon" />
+</androidx.constraintlayout.widget.ConstraintLayout>
