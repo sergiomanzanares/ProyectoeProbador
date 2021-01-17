@@ -34,7 +34,7 @@ public class FragmentoConjunto extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View vw =  inflater.inflate(R.layout.fragment_fragmento_conjunto, container, false);
-
+        txtTotal = vw.findViewById(R.id.totalPrice);
         return vw;
     }
 }

@@ -13,6 +13,7 @@ public class Perfil extends AppCompatActivity {
 
     ProfileFragment fragmento;
     List<String> friends;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
