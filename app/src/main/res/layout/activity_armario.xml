@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArmarioActivity">
+
+    <TextView
+        android:id="@+id/tvConjuntoArmario1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conjunto1"
+        app:layout_constraintBottom_toTopOf="@+id/btnCamisaConjuntoArmario1"
+        app:layout_constraintStart_toStartOf="@+id/btnCamisaConjuntoArmario1" />
+
+    <Button
+        android:id="@+id/btnCamisaConjuntoArmario1"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Camisa"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPantalonConjuntoArmario1"
+        app:layout_constraintEnd_toStartOf="@+id/btnPantalonConjuntoArmario1"
+        app:layout_constraintTop_toTopOf="@+id/btnPantalonConjuntoArmario1" />
+
+    <Button
+        android:id="@+id/btnPantalonConjuntoArmario1"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Pantalón"
+        app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoArmario1"
+        app:layout_constraintEnd_toStartOf="@+id/btnZapatosConjuntoArmario1"
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario1" />
+
+    <Button
+        android:id="@+id/btnZapatosConjuntoArmario1"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Zapatos"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+    <Button
+        android:id="@+id/btnCalcetinesConjuntoArmario1"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Calcetines"
+        app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoArmario1"
+        app:layout_constraintStart_toEndOf="@+id/btnZapatosConjuntoArmario1"
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario1" />
+
+    <Button
+        android:id="@+id/btnPrecioConjuntoArmario1"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Precio"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCalcetinesConjuntoArmario1"
+        app:layout_constraintStart_toEndOf="@+id/btnCalcetinesConjuntoArmario1"
+        app:layout_constraintTop_toTopOf="@+id/btnCalcetinesConjuntoArmario1" />
+
+    <TextView
+        android:id="@+id/tvConjuntoArmario2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conjunto2"
+        app:layout_constraintBottom_toTopOf="@+id/btnCamisaConjuntoArmario2"
+        app:layout_constraintStart_toStartOf="@+id/btnCamisaConjuntoArmario2" />
+
+    <Button
+        android:id="@+id/btnCamisaConjuntoArmario2"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Camisa"
+        app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoArmario2"
+        app:layout_constraintEnd_toStartOf="@+id/btnPantalonConjuntoArmario2"
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario2" />
+
+    <Button
+        android:id="@+id/btnPantalonConjuntoArmario2"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Pantalón"
+        app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoArmario2"
+        app:layout_constraintEnd_toStartOf="@+id/btnZapatosConjuntoArmario2"
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario2" />
+
+    <Button
+        android:id="@+id/btnZapatosConjuntoArmario2"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Zapatos"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline12"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <Button
+        android:id="@+id/btnCalcetinesConjuntoArmario2"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Calcetines"
+        app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoArmario2"
+        app:layout_constraintStart_toEndOf="@+id/btnZapatosConjuntoArmario2"
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario2" />
+
+    <Button
+        android:id="@+id/btnPrecioConjuntoArmario2"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Precio"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCalcetinesConjuntoArmario2"
+        app:layout_constraintStart_toEndOf="@+id/btnCalcetinesConjuntoArmario2"
+        app:layout_constraintTop_toTopOf="@+id/btnCalcetinesConjuntoArmario2" />
+
+    <TextView
+        android:id="@+id/tvConjuntoArmario3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conjunto3"
+        app:layout_constraintBottom_toTopOf="@+id/btnCamisaConjuntoArmario3"
+        app:layout_constraintStart_toStartOf="@+id/btnCamisaConjuntoArmario3" />
+
+    <Button
+        android:id="@+id/btnCamisaConjuntoArmario3"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Camisa"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPantalonConjuntoArmario3"
+        app:layout_constraintEnd_toStartOf="@+id/btnPantalonConjuntoArmario3"
+        app:layout_constraintTop_toTopOf="@+id/btnPantalonConjuntoArmario3" />
+
+    <Button
+        android:id="@+id/btnPantalonConjuntoArmario3"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Pantalón"
+        app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoArmario3"
+        app:layout_constraintEnd_toStartOf="@+id/btnZapatosConjuntoArmario3"
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario3" />
+
+    <Button
+        android:id="@+id/btnZapatosConjuntoArmario3"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Zapatos"
+        app:layout_constraintBottom_toTopOf="@+id/guideline15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+    <Button
+        android:id="@+id/btnCalcetinesConjuntoArmario3"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Calcetines"
+        app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoArmario3"
+        app:layout_constraintStart_toEndOf="@+id/btnZapatosConjuntoArmario3"
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario3" />
+
+    <Button
+        android:id="@+id/btnPrecioConjuntoArmario3"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Precio"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCalcetinesConjuntoArmario3"
+        app:layout_constraintStart_toEndOf="@+id/btnCalcetinesConjuntoArmario3"
+        app:layout_constraintTop_toTopOf="@+id/btnCalcetinesConjuntoArmario3" />
+
+    <Button
+        android:id="@+id/btnArmario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estaciones"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

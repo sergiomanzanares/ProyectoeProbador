@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedActivity">
+
+    <TextView
+        android:id="@+id/tvConjuntoArmario1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conjunto1"
+        app:layout_constraintBottom_toTopOf="@+id/btnCamisaConjuntoFeed1"
+        app:layout_constraintStart_toStartOf="@+id/btnCamisaConjuntoFeed1" />
+
+    <Button
+        android:id="@+id/btnCamisaConjuntoFeed1"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Camisa"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPantalonConjuntoFeed1"
+        app:layout_constraintEnd_toStartOf="@+id/btnPantalonConjuntoFeed1"
+        app:layout_constraintTop_toTopOf="@+id/btnPantalonConjuntoFeed1" />
+
+    <Button
+        android:id="@+id/btnPantalonConjuntoFeed1"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Pantalón"
+        app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoFeed1"
+        app:layout_constraintEnd_toStartOf="@+id/btnZapatosConjuntoFeed1"
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed1" />
+
+    <Button
+        android:id="@+id/btnZapatosConjuntoFeed1"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Zapatos"
+        app:layout_constraintBottom_toTopOf="@+id/guideline19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline18" />
+
+    <Button
+        android:id="@+id/btnCalcetinesConjuntoFeed1"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Calcetines"
+        app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoFeed1"
+        app:layout_constraintStart_toEndOf="@+id/btnZapatosConjuntoFeed1"
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed1" />
+
+    <Button
+        android:id="@+id/btnPrecioConjuntoFeed1"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Precio"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCalcetinesConjuntoFeed1"
+        app:layout_constraintStart_toEndOf="@+id/btnCalcetinesConjuntoFeed1"
+        app:layout_constraintTop_toTopOf="@+id/btnCalcetinesConjuntoFeed1" />
+
+    <TextView
+        android:id="@+id/tvConjuntoFeed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conjunto2"
+        app:layout_constraintBottom_toTopOf="@+id/btnCamisaConjuntoFeed2"
+        app:layout_constraintStart_toStartOf="@+id/btnCamisaConjuntoFeed2" />
+
+    <Button
+        android:id="@+id/btnCamisaConjuntoFeed2"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Camisa"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPantalonConjuntoFeed2"
+        app:layout_constraintEnd_toStartOf="@+id/btnPantalonConjuntoFeed2"
+        app:layout_constraintTop_toTopOf="@+id/btnPantalonConjuntoFeed2" />
+
+    <Button
+        android:id="@+id/btnPantalonConjuntoFeed2"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Pantalón"
+        app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoFeed2"
+        app:layout_constraintEnd_toStartOf="@+id/btnZapatosConjuntoFeed2"
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed2" />
+
+    <Button
+        android:id="@+id/btnZapatosConjuntoFeed2"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Zapatos"
+        app:layout_constraintBottom_toTopOf="@+id/guideline21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline20" />
+
+    <Button
+        android:id="@+id/btnCalcetinesConjuntoFeed2"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Calcetines"
+        app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoFeed2"
+        app:layout_constraintStart_toEndOf="@+id/btnZapatosConjuntoFeed2"
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed2" />
+
+    <Button
+        android:id="@+id/btnPrecioConjuntoFeed2"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Precio"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCalcetinesConjuntoFeed2"
+        app:layout_constraintStart_toEndOf="@+id/btnCalcetinesConjuntoFeed2"
+        app:layout_constraintTop_toTopOf="@+id/btnCalcetinesConjuntoFeed2" />
+
+    <TextView
+        android:id="@+id/tvConjuntoFeed3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conjunto2"
+        app:layout_constraintBottom_toTopOf="@+id/btnCamisaConjuntoFeed3"
+        app:layout_constraintStart_toStartOf="@+id/btnCamisaConjuntoFeed3" />
+
+    <Button
+        android:id="@+id/btnCamisaConjuntoFeed3"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Camisa"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPantalonConjuntoFeed3"
+        app:layout_constraintEnd_toStartOf="@+id/btnPantalonConjuntoFeed3"
+        app:layout_constraintTop_toTopOf="@+id/btnPantalonConjuntoFeed3" />
+
+    <Button
+        android:id="@+id/btnPantalonConjuntoFeed3"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Pantalón"
+        app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoFeed3"
+        app:layout_constraintEnd_toStartOf="@+id/btnZapatosConjuntoFeed3"
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed3" />
+
+    <Button
+        android:id="@+id/btnZapatosConjuntoFeed3"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Zapatos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline22" />
+
+    <Button
+        android:id="@+id/btnCalcetinesConjuntoFeed3"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Calcetines"
+        app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoFeed3"
+        app:layout_constraintStart_toEndOf="@+id/btnZapatosConjuntoFeed3"
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed3" />
+
+    <Button
+        android:id="@+id/btnPrecioConjuntoFeed3"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:text="Precio"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCalcetinesConjuntoFeed3"
+        app:layout_constraintStart_toEndOf="@+id/btnCalcetinesConjuntoFeed3"
+        app:layout_constraintTop_toTopOf="@+id/btnCalcetinesConjuntoFeed3" />
+
+    <Button
+        android:id="@+id/btnFeedAmigos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Amigos"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFeedAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="All"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
