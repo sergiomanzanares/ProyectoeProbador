@@ -10,52 +10,78 @@
         android:id="@+id/tvConjuntoArmario1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="5"
+        android:shadowRadius="4"
         android:text="Conjunto1"
+        android:textColor="#000000"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btnCamisaConjuntoArmario1"
         app:layout_constraintStart_toStartOf="@+id/btnCamisaConjuntoArmario1" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnCamisaConjuntoArmario1"
         android:layout_width="69dp"
         android:layout_height="56dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="Camisa"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnPantalonConjuntoArmario1"
         app:layout_constraintEnd_toStartOf="@+id/btnPantalonConjuntoArmario1"
-        app:layout_constraintTop_toTopOf="@+id/btnPantalonConjuntoArmario1" />
+        app:layout_constraintTop_toTopOf="@+id/btnPantalonConjuntoArmario1"
+        tools:src="@drawable/shirt2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnPantalonConjuntoArmario1"
         android:layout_width="69dp"
         android:layout_height="56dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="Pantalón"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoArmario1"
         app:layout_constraintEnd_toStartOf="@+id/btnZapatosConjuntoArmario1"
-        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario1" />
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario1"
+        tools:src="@drawable/jeans2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnZapatosConjuntoArmario1"
         android:layout_width="69dp"
         android:layout_height="56dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="Zapatos"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline10" />
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        tools:src="@drawable/sneakers2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnCalcetinesConjuntoArmario1"
         android:layout_width="69dp"
         android:layout_height="56dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="Calcetines"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoArmario1"
         app:layout_constraintStart_toEndOf="@+id/btnZapatosConjuntoArmario1"
-        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario1" />
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario1"
+        tools:src="@drawable/calcetines2" />
 
     <Button
         android:id="@+id/btnPrecioConjuntoArmario1"
         android:layout_width="69dp"
         android:layout_height="56dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="Precio"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnCalcetinesConjuntoArmario1"
         app:layout_constraintStart_toEndOf="@+id/btnCalcetinesConjuntoArmario1"
         app:layout_constraintTop_toTopOf="@+id/btnCalcetinesConjuntoArmario1" />
@@ -64,53 +90,79 @@
         android:id="@+id/tvConjuntoArmario2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="5"
+        android:shadowRadius="4"
         android:text="Conjunto2"
+        android:textColor="#000000"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btnCamisaConjuntoArmario2"
         app:layout_constraintStart_toStartOf="@+id/btnCamisaConjuntoArmario2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnCamisaConjuntoArmario2"
         android:layout_width="69dp"
         android:layout_height="56dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="Camisa"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoArmario2"
         app:layout_constraintEnd_toStartOf="@+id/btnPantalonConjuntoArmario2"
-        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario2" />
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario2"
+        tools:src="@drawable/shirt2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnPantalonConjuntoArmario2"
         android:layout_width="69dp"
         android:layout_height="56dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="Pantalón"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoArmario2"
         app:layout_constraintEnd_toStartOf="@+id/btnZapatosConjuntoArmario2"
-        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario2" />
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario2"
+        tools:src="@drawable/jeans2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnZapatosConjuntoArmario2"
         android:layout_width="69dp"
         android:layout_height="56dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="Zapatos"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline13"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline12"
-        app:layout_constraintVertical_bias="0.504" />
+        app:layout_constraintVertical_bias="0.504"
+        tools:src="@drawable/sneakers2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnCalcetinesConjuntoArmario2"
         android:layout_width="69dp"
         android:layout_height="56dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="Calcetines"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoArmario2"
         app:layout_constraintStart_toEndOf="@+id/btnZapatosConjuntoArmario2"
-        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario2" />
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario2"
+        tools:src="@drawable/calcetines2" />
 
     <Button
         android:id="@+id/btnPrecioConjuntoArmario2"
         android:layout_width="69dp"
         android:layout_height="56dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="Precio"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnCalcetinesConjuntoArmario2"
         app:layout_constraintStart_toEndOf="@+id/btnCalcetinesConjuntoArmario2"
         app:layout_constraintTop_toTopOf="@+id/btnCalcetinesConjuntoArmario2" />
@@ -119,61 +171,90 @@
         android:id="@+id/tvConjuntoArmario3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="5"
+        android:shadowRadius="4"
         android:text="Conjunto3"
+        android:textColor="#000000"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btnCamisaConjuntoArmario3"
         app:layout_constraintStart_toStartOf="@+id/btnCamisaConjuntoArmario3" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnCamisaConjuntoArmario3"
         android:layout_width="69dp"
         android:layout_height="56dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="Camisa"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnPantalonConjuntoArmario3"
         app:layout_constraintEnd_toStartOf="@+id/btnPantalonConjuntoArmario3"
-        app:layout_constraintTop_toTopOf="@+id/btnPantalonConjuntoArmario3" />
+        app:layout_constraintTop_toTopOf="@+id/btnPantalonConjuntoArmario3"
+        tools:src="@drawable/shirt2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnPantalonConjuntoArmario3"
         android:layout_width="69dp"
         android:layout_height="56dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="Pantalón"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoArmario3"
         app:layout_constraintEnd_toStartOf="@+id/btnZapatosConjuntoArmario3"
-        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario3" />
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario3"
+        tools:src="@drawable/jeans2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnZapatosConjuntoArmario3"
         android:layout_width="69dp"
         android:layout_height="56dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="Zapatos"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline14" />
+        app:layout_constraintTop_toTopOf="@+id/guideline14"
+        tools:src="@drawable/sneakers2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnCalcetinesConjuntoArmario3"
         android:layout_width="69dp"
         android:layout_height="56dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="Calcetines"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoArmario3"
         app:layout_constraintStart_toEndOf="@+id/btnZapatosConjuntoArmario3"
-        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario3" />
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoArmario3"
+        tools:src="@drawable/calcetines2" />
 
     <Button
         android:id="@+id/btnPrecioConjuntoArmario3"
         android:layout_width="69dp"
         android:layout_height="56dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="Precio"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnCalcetinesConjuntoArmario3"
         app:layout_constraintStart_toEndOf="@+id/btnCalcetinesConjuntoArmario3"
         app:layout_constraintTop_toTopOf="@+id/btnCalcetinesConjuntoArmario3" />
 
     <Button
         android:id="@+id/btnArmario"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="Estaciones"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -21,7 +21,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnCamisaConjuntoFeed1"
         app:layout_constraintStart_toStartOf="@+id/btnCamisaConjuntoFeed1" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnCamisaConjuntoFeed1"
         android:layout_width="69dp"
         android:layout_height="56dp"
@@ -31,9 +31,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnPantalonConjuntoFeed1"
         app:layout_constraintEnd_toStartOf="@+id/btnPantalonConjuntoFeed1"
-        app:layout_constraintTop_toTopOf="@+id/btnPantalonConjuntoFeed1" />
+        app:layout_constraintTop_toTopOf="@+id/btnPantalonConjuntoFeed1"
+        tools:src="@drawable/shirt2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnPantalonConjuntoFeed1"
         android:layout_width="69dp"
         android:layout_height="56dp"
@@ -43,9 +44,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoFeed1"
         app:layout_constraintEnd_toStartOf="@+id/btnZapatosConjuntoFeed1"
-        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed1" />
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed1"
+        tools:src="@drawable/jeans2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnZapatosConjuntoFeed1"
         android:layout_width="69dp"
         android:layout_height="56dp"
@@ -56,9 +58,10 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline19"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline18" />
+        app:layout_constraintTop_toTopOf="@+id/guideline18"
+        tools:src="@drawable/sneakers2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnCalcetinesConjuntoFeed1"
         android:layout_width="69dp"
         android:layout_height="56dp"
@@ -68,7 +71,8 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoFeed1"
         app:layout_constraintStart_toEndOf="@+id/btnZapatosConjuntoFeed1"
-        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed1" />
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed1"
+        tools:src="@drawable/calcetines2" />
 
     <Button
         android:id="@+id/btnPrecioConjuntoFeed1"
@@ -97,7 +101,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnCamisaConjuntoFeed2"
         app:layout_constraintStart_toStartOf="@+id/btnCamisaConjuntoFeed2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnCamisaConjuntoFeed2"
         android:layout_width="69dp"
         android:layout_height="56dp"
@@ -107,9 +111,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnPantalonConjuntoFeed2"
         app:layout_constraintEnd_toStartOf="@+id/btnPantalonConjuntoFeed2"
-        app:layout_constraintTop_toTopOf="@+id/btnPantalonConjuntoFeed2" />
+        app:layout_constraintTop_toTopOf="@+id/btnPantalonConjuntoFeed2"
+        tools:src="@drawable/shirt2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnPantalonConjuntoFeed2"
         android:layout_width="69dp"
         android:layout_height="56dp"
@@ -119,9 +124,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoFeed2"
         app:layout_constraintEnd_toStartOf="@+id/btnZapatosConjuntoFeed2"
-        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed2" />
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed2"
+        tools:src="@drawable/jeans2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnZapatosConjuntoFeed2"
         android:layout_width="69dp"
         android:layout_height="56dp"
@@ -132,9 +138,10 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline21"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline20" />
+        app:layout_constraintTop_toTopOf="@+id/guideline20"
+        tools:src="@drawable/sneakers2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnCalcetinesConjuntoFeed2"
         android:layout_width="69dp"
         android:layout_height="56dp"
@@ -144,7 +151,8 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoFeed2"
         app:layout_constraintStart_toEndOf="@+id/btnZapatosConjuntoFeed2"
-        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed2" />
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed2"
+        tools:src="@drawable/calcetines2" />
 
     <Button
         android:id="@+id/btnPrecioConjuntoFeed2"
@@ -173,7 +181,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnCamisaConjuntoFeed3"
         app:layout_constraintStart_toStartOf="@+id/btnCamisaConjuntoFeed3" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnCamisaConjuntoFeed3"
         android:layout_width="69dp"
         android:layout_height="56dp"
@@ -183,9 +191,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnPantalonConjuntoFeed3"
         app:layout_constraintEnd_toStartOf="@+id/btnPantalonConjuntoFeed3"
-        app:layout_constraintTop_toTopOf="@+id/btnPantalonConjuntoFeed3" />
+        app:layout_constraintTop_toTopOf="@+id/btnPantalonConjuntoFeed3"
+        tools:src="@drawable/shirt2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnPantalonConjuntoFeed3"
         android:layout_width="69dp"
         android:layout_height="56dp"
@@ -195,9 +204,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoFeed3"
         app:layout_constraintEnd_toStartOf="@+id/btnZapatosConjuntoFeed3"
-        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed3" />
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed3"
+        tools:src="@drawable/jeans2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnZapatosConjuntoFeed3"
         android:layout_width="69dp"
         android:layout_height="56dp"
@@ -208,9 +218,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline22" />
+        app:layout_constraintTop_toTopOf="@+id/guideline22"
+        tools:src="@drawable/sneakers2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnCalcetinesConjuntoFeed3"
         android:layout_width="69dp"
         android:layout_height="56dp"
@@ -220,7 +231,8 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnZapatosConjuntoFeed3"
         app:layout_constraintStart_toEndOf="@+id/btnZapatosConjuntoFeed3"
-        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed3" />
+        app:layout_constraintTop_toTopOf="@+id/btnZapatosConjuntoFeed3"
+        tools:src="@drawable/calcetines2" />
 
     <Button
         android:id="@+id/btnPrecioConjuntoFeed3"

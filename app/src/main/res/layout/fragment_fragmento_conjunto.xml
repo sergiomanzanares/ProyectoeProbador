@@ -148,7 +148,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="52dp"
+        android:fontFamily="sans-serif-black"
         android:text="0€"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/descripcionCamiseta"
         app:layout_constraintTop_toTopOf="parent" />
@@ -160,7 +162,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
         android:text="0€"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/descripcionPantalon"
         app:layout_constraintTop_toBottomOf="@+id/precioCamiseta" />
@@ -172,7 +176,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
         android:text="0€"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/descripcionZapatilla"
         app:layout_constraintTop_toBottomOf="@+id/precioPantalon" />
@@ -184,7 +190,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-black"
         android:text="0€"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/descripcionOtros"
         app:layout_constraintTop_toBottomOf="@+id/precioZapatilas" />
