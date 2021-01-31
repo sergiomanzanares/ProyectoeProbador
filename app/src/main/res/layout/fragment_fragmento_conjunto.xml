@@ -13,7 +13,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="32dp"
-        android:src="@drawable/camiseta"
+        android:src="@drawable/shirt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,7 +24,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="24dp"
-        android:src="@drawable/rapatiilla"
+        android:src="@drawable/sneakers"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pantalon" />
 
@@ -35,7 +35,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="24dp"
-        android:src="@drawable/pantalonm"
+        android:src="@drawable/jeans"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/camiseta" />
 
@@ -55,7 +55,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#000000"
+        android:shadowDx="3"
+        android:shadowDy="0"
+        android:shadowRadius="4"
         android:text="Precio Total"
+        android:textColor="#000000"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +76,14 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="5"
+        android:shadowRadius="4"
         android:text="Camiseta"
+        android:textColor="#000000"
+        android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/camiseta"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -80,7 +94,14 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="5"
+        android:shadowRadius="4"
         android:text="Pantalon"
+        android:textColor="#000000"
+        android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/pantalon"
         app:layout_constraintTop_toBottomOf="@+id/descripcionCamiseta" />
 
@@ -91,7 +112,14 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="5"
+        android:shadowRadius="4"
         android:text="Zapatilla"
+        android:textColor="#000000"
+        android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/zapatillas"
         app:layout_constraintTop_toBottomOf="@+id/descripcionPantalon" />
 
@@ -102,7 +130,14 @@
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="5"
+        android:shadowRadius="4"
         android:text="Otros"
+        android:textColor="#000000"
+        android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/otros"
         app:layout_constraintTop_toBottomOf="@+id/descripcionZapatilla" />
 
@@ -114,6 +149,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="52dp"
         android:text="0€"
+        android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/descripcionCamiseta"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -125,28 +161,31 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="60dp"
         android:text="0€"
+        android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/descripcionPantalon"
         app:layout_constraintTop_toBottomOf="@+id/precioCamiseta" />
 
     <TextView
         android:id="@+id/precioZapatilas"
-        android:layout_width="19dp"
-        android:layout_height="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="60dp"
         android:text="0€"
+        android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/descripcionZapatilla"
         app:layout_constraintTop_toBottomOf="@+id/precioPantalon" />
 
     <TextView
         android:id="@+id/precioOtros"
-        android:layout_width="21dp"
-        android:layout_height="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="70dp"
         android:text="0€"
+        android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/descripcionOtros"
         app:layout_constraintTop_toBottomOf="@+id/precioZapatilas" />
 
@@ -155,6 +194,8 @@
         android:layout_width="49dp"
         android:layout_height="36dp"
         android:layout_marginTop="44dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="$"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
@@ -166,6 +207,8 @@
         android:layout_width="49dp"
         android:layout_height="47dp"
         android:layout_marginTop="48dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="$"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
@@ -177,6 +220,8 @@
         android:layout_width="49dp"
         android:layout_height="47dp"
         android:layout_marginTop="44dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="$"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.43"
@@ -188,6 +233,8 @@
         android:layout_width="49dp"
         android:layout_height="47dp"
         android:layout_marginTop="36dp"
+        android:background="#00A57F"
+        android:rotationX="10"
         android:text="$"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.443"
