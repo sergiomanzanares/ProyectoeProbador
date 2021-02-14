@@ -14,15 +14,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder>{
-    private List<String[]> mData;
+    private List<ImageButton> mData;
     private LayoutInflater mInflater;
     private ItemClickListener mClickListener;
-    private int x = 0;
+
 
     // data is passed into the constructor
     Adaptador(Context context) {
         this.mInflater = LayoutInflater.from(context);
-        mData = new ArrayList<String[]>();
+        mData = new ArrayList<ImageButton>();
     }
 
     // inflates the row layout from xml when needed
@@ -35,32 +35,8 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder>{
     // binds the data to the TextView in each row
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        x++;
-        switch (x){
-            case 1:
-                holder.p0.setImageAlpha(R.drawable.shirt);
-                holder.p1.setImageAlpha(R.drawable.shirt);
-                holder.p2.setImageAlpha(R.drawable.shirt);
-                holder.p3.setImageAlpha(R.drawable.shirt);
-                break;
-            case 2:
-                holder.p0.setImageAlpha(R.drawable.jeans);
-                holder.p1.setImageAlpha(R.drawable.jeans);
-                holder.p2.setImageAlpha(R.drawable.jeans);
-                holder.p3.setImageAlpha(R.drawable.jeans);
-                break;
-            case 3:
-                holder.p0.setImageAlpha(R.drawable.calcetines);
-                holder.p1.setImageAlpha(R.drawable.calcetines);
-                holder.p2.setImageAlpha(R.drawable.calcetines);
-                holder.p3.setImageAlpha(R.drawable.calcetines);
-                break;
-            case 4:
-                holder.p0.setImageAlpha(R.drawable.otros);
-                holder.p1.setImageAlpha(R.drawable.otros);
-                holder.p2.setImageAlpha(R.drawable.otros);
-                holder.p3.setImageAlpha(R.drawable.otros);
-        }
+        ImageButton prenda = mData.get(position);
+        holder.p.setImageAlpha(prenda.getImageAlpha());
     }
 
     // total number of rows
@@ -69,7 +45,7 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder>{
         return mData.size();
     }
 
-    public void addData(ArrayList<String[]> info) {
+    public void addData(ArrayList<ImageButton> info) {
         mData.addAll(info);
         notifyDataSetChanged();
     }
@@ -77,14 +53,12 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder>{
 
     // stores and recycles views as they are scrolled off screen
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        ImageButton p0,p1,p2,p3;
+        ImageButton p;
 
         ViewHolder(View itemView) {
             super(itemView);
-            p0 = itemView.findViewById(R.id.imageButton2);
-            p0 = itemView.findViewById(R.id.imageButton2);
-            p0 = itemView.findViewById(R.id.imageButton2);
-            p0 = itemView.findViewById(R.id.imageButton2);
+            p = itemView.findViewById(R.id.imageButton2);
+
             itemView.setOnClickListener(this);
         }
 
@@ -95,7 +69,7 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder>{
     }
 
     // convenience method for getting data at click position
-    String[] getItem(int id) {
+    ImageButton getItem(int id) {
         return mData.get(id);
     }
 
