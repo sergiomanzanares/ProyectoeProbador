@@ -6,50 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".PrendasActivity">
 
-    <fragment
-        android:id="@+id/fragmentCamisetas"
-        android:name="com.example.proyectoeprobador.PrendasFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+    <ImageButton
+        android:id="@+id/imageButtonCamisa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:srcCompat="@drawable/shirt2" />
 
-    <fragment
-        android:id="@+id/fragmentPantalones"
-        android:name="com.example.proyectoeprobador.PrendasFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="19dp"
+    <ImageButton
+        android:id="@+id/imageButtonPantalon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toEndOf="@+id/fragmentCamisetas"
-        app:layout_constraintStart_toStartOf="@+id/fragmentCamisetas"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:srcCompat="@drawable/jeans2" />
 
-    <fragment
-        android:id="@+id/fragmentZapatillas"
-        android:name="com.example.proyectoeprobador.PrendasFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="19dp"
+    <ImageButton
+        android:id="@+id/imageButtonZapaos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
-        app:layout_constraintEnd_toEndOf="@+id/fragmentPantalones"
-        app:layout_constraintStart_toStartOf="@+id/fragmentPantalones"
-        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:srcCompat="@drawable/sneakers2" />
 
-    <fragment
-        android:id="@+id/fragmentPantalones3"
-        android:name="com.example.proyectoeprobador.PrendasFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="19dp"
+    <ImageButton
+        android:id="@+id/imageButtonCalcetines"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
-        app:layout_constraintEnd_toEndOf="@+id/fragmentCamisetas"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/fragmentCamisetas"
-        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline7"
+        app:srcCompat="@drawable/calcetines2" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -115,7 +110,7 @@
         app:layout_constraintGuide_percent="0.98" />
 
     <Button
-        android:id="@+id/btnPrendas"
+        android:id="@+id/btnOtrasPrendas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Otras Prendas"

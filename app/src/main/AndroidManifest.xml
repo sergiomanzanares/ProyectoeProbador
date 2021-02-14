@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Registro"></activity>
+        <activity android:name=".ListaOtros"></activity>
+        <activity android:name=".ListaCalcetines" />
+        <activity android:name=".ListaZapatos" />
+        <activity android:name=".ListaPantalon" />
+        <activity android:name=".ListaCamisas" />
+        <activity android:name=".Adaptador" />
+        <activity android:name=".Registro" />
         <activity android:name=".LogIn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,8 +28,7 @@
         <activity android:name=".FeedActivity" />
         <activity android:name=".Perfil" />
         <activity android:name=".Probador" />
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
