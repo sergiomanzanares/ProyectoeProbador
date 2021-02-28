@@ -22,7 +22,15 @@ public class PollClient {
         }
         return login;
     }
+    public PollService getApiService(){
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(Urls.URLSERVIDOR)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
 
+        PollService service = retrofit.create(PollService.class);
+        return service;
+    }
     private void loadLogin(LoginRequest request) {
         // Accede al API para descargar datos
         Retrofit retrofit = new Retrofit.Builder()

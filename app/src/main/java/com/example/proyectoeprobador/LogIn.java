@@ -11,10 +11,16 @@ import android.widget.EditText;
 import com.example.proyectoeprobador.Identificacion.LoginRequest;
 import com.example.proyectoeprobador.Identificacion.LoginResponse;
 import com.example.proyectoeprobador.Identificacion.PollClient;
+import com.example.proyectoeprobador.Identificacion.PostResponse;
 import com.example.proyectoeprobador.Identificacion.SesionManager;
 
-public class LogIn extends AppCompatActivity {
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
+public class LogIn extends AppCompatActivity {
+    PollClient apiClient;
+    SesionManager sesion;
     EditText user, pass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +30,8 @@ public class LogIn extends AppCompatActivity {
         user = findViewById(R.id.editTextUser);
         pass = findViewById(R.id.editTextPass);
 
-        PollClient apiClient = new PollClient();
-        SesionManager sesion = new SesionManager(this);
+        apiClient = new PollClient();
+        sesion = new SesionManager(this);
 
         apiClient.getLogin(new LoginRequest(user.getText().toString(),pass.getText().toString()))
         .observe(this, new Observer<LoginResponse>() {
@@ -52,6 +58,21 @@ public class LogIn extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(intAbrirRegistro);
+            }
+        });
+    }
+
+    public void fetchPostsÑ(){
+        apiClient.getApiService().fetchPost("Bearer ${sessionManager.fetchAuthToken()")
+        .enqueue(new Callback<PostResponse>() {
+            @Override
+            public void onResponse(Call<PostResponse> call, Response<PostResponse> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<PostResponse> call, Throwable t) {
+
             }
         });
     }
