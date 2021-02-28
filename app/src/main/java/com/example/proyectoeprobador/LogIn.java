@@ -27,30 +27,19 @@ public class LogIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
 
+        final Intent intAbrirMain = new Intent(LogIn.this, MainActivity.class);
+        final Intent intAbrirRegistro = new Intent(LogIn.this, Registro.class);
+
         user = findViewById(R.id.editTextUser);
         pass = findViewById(R.id.editTextPass);
 
         apiClient = new PollClient();
         sesion = new SesionManager(this);
 
-        apiClient.getLogin(new LoginRequest(user.getText().toString(),pass.getText().toString()))
-        .observe(this, new Observer<LoginResponse>() {
-            @Override
-            public void onChanged(LoginResponse loginResponse) {
-                if (loginResponse.getStatusCode()!= 200){
-                    sesion.saveAuthToken(loginResponse.getAuthToken());
-                }
-            }
-        });
-
-
-        final Intent intAbrirMain = new Intent(LogIn.this, MainActivity.class);
-        final Intent intAbrirRegistro = new Intent(LogIn.this, Registro.class);
-
         findViewById(R.id.buttonLogin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(intAbrirMain);
+                apiClientLoginRequest(intAbrirMain);
             }
         });
 
@@ -62,7 +51,20 @@ public class LogIn extends AppCompatActivity {
         });
     }
 
-    public void fetchPostsÑ(){
+    private void apiClientLoginRequest(final Intent intAbrirMain) {
+        apiClient.getLogin(new LoginRequest(user.getText().toString(),pass.getText().toString()))
+        .observe(this, new Observer<LoginResponse>() {
+            @Override
+            public void onChanged(LoginResponse loginResponse) {
+                if (loginResponse.getStatusCode()!= 200){
+                    sesion.saveAuthToken(loginResponse.getAuthToken());
+                    startActivity(intAbrirMain);
+                }
+            }
+        });
+    }
+
+    public void fetchPosts(){
         apiClient.getApiService().fetchPost("Bearer ${sessionManager.fetchAuthToken()")
         .enqueue(new Callback<PostResponse>() {
             @Override
