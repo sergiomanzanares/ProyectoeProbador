@@ -34,7 +34,9 @@ public class LogIn extends AppCompatActivity {
         pass = findViewById(R.id.editTextPass);
 
         apiClient = new PollClient();
-        sesion = new SesionManager(this);
+        //esto es para el token pero si no carga la api no funciona
+
+        //sesion = new SesionManager(this);
 
         findViewById(R.id.buttonLogin).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +54,8 @@ public class LogIn extends AppCompatActivity {
     }
 
     private void apiClientLoginRequest(final Intent intAbrirMain) {
-        apiClient.getLogin(new LoginRequest(user.getText().toString(),pass.getText().toString()))
+        //hace llamada a una api, para hacer las pruebas está comentado aposta
+        /*apiClient.getLogin(new LoginRequest(user.getText().toString(),pass.getText().toString()))
         .observe(this, new Observer<LoginResponse>() {
             @Override
             public void onChanged(LoginResponse loginResponse) {
@@ -61,7 +64,11 @@ public class LogIn extends AppCompatActivity {
                     startActivity(intAbrirMain);
                 }
             }
-        });
+        });*/
+        //para hacer la prueba sin la api
+        if(user.getText().toString().equals("admin")&&
+                pass.getText().toString().equals("admin"))
+        startActivity(intAbrirMain);
     }
 
     public void fetchPosts(){
